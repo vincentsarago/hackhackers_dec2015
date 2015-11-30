@@ -36,7 +36,7 @@ Process
 - [Gimp](http://snapsat.org)
 - [ImageMagick](http://snapsat.org)
 
-Distribute
+Display / Distribute
 -------
 - [Fetch Astro Digital](https://fetch.astrodigital.com) (Publish Landsat 8)
 - [Leaflet](https://fetch.astrodigital.com) (Publish Landsat 8)
