@@ -1,5 +1,6 @@
 # hackhackers_dec2015
 links and infos given during my "Nouvelles tendances en cartographie" presentation
+
 [Event](http://www.meetup.com/fr/HacksHackersMontreal/events/227012288/)
 
 Imagery
