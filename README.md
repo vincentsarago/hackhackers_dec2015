@@ -1,3 +1,6 @@
+
+![](/img/Pres.jpeg)
+
 # hackhackers_dec2015
 links and infos given during my "Nouvelles tendances en cartographie" presentation
 
@@ -5,7 +8,7 @@ links and infos given during my "Nouvelles tendances en cartographie" presentati
 
 Imagery
 -------
-![](http://remotepixel.ca/img/respercost.png)
+![](/img/respercost.png)
 source: http://satsummit.github.io/landscape/#capture
 
 New players:
