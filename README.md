@@ -54,3 +54,5 @@ Links
 - [Jacques Tardie - Remote Sensing ressource](https://github.com/jacquestardie/remote)
 - [MapBox - Blog](https://www.mapbox.com/blog/)
 - [Gdal CookBook](https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html)
+- [Landsat 8 Band Combinations (ENVI)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
+- [Landsat 8 Band Combinations (ArcGIS)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
