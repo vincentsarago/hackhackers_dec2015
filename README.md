@@ -32,14 +32,14 @@ Access
 
 Process
 -------
+- [QGIS](http://www.qgis.org)
+- [Arcgis](http://www.esri.com/products/arcgis-capabilities/imagery)
+- [GDAL](http://www.gdal.org)
+- [Landsat-Util](https://github.com/developmentseed/landsat-util)
+- [Rasterio](https://github.com/mapbox/rasterio)
 - [SnapSat](http://snapsat.org) (Landsat 8 color composite)
-- [QGIS](http://snapsat.org)
-- [Arcgis](http://snapsat.org)
-- [GDAL](http://snapsat.org)
-- [Landsat-Util](http://snapsat.org)
-- [Rasterio](http://snapsat.org)
-- [Gimp](http://snapsat.org)
-- [ImageMagick](http://snapsat.org)
+- [Gimp](https://www.gimp.org)
+- [ImageMagick](http://www.imagemagick.org/script/index.php)
 
 Display / Distribute
 -------
@@ -47,12 +47,39 @@ Display / Distribute
 - [Leaflet](https://fetch.astrodigital.com) (Publish Landsat 8)
 - [MapBox](https://www.mapbox.com)
 
-Links
+More
 -------
 - [Satellites in Global Development](http://satsummit.github.io/landscape/) 
 - [Derek Watkins - gdal-cheat-sheet](https://github.com/dwtkns/gdal-cheat-sheet)
 - [Jacques Tardie - Remote Sensing ressource](https://github.com/jacquestardie/remote)
-- [MapBox - Blog](https://www.mapbox.com/blog/)
+- [Processing Landsat 8 Using Open-Source Tools](https://www.mapbox.com/blog/processing-landsat-8/)
+- [Putting Landsat 8’s Bands to Work](https://www.mapbox.com/blog/putting-landsat-8-bands-to-work/)
+- [Introduction to the geo command line](https://developmentseed.org/blog/2015/08/27/geo-command-line-introduction/)
+- [Optimizing Landsat-util](https://developmentseed.org/blog/2015/03/28/twice-as-fast)
 - [Gdal CookBook](https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html)
 - [Landsat 8 Band Combinations (ENVI)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
 - [Landsat 8 Band Combinations (ArcGIS)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
+
+
+Who to follow
+-------
+- [@Effigis](https://twitter.com/Effigis) 
+- [@Mapbox](https://twitter.com/Mapbox) 
+- [@Developmentseed](https://twitter.com/developmentseed ) 
+- [@hotosm](https://twitter.com/hotosm) 
+- [@astrodigitalgeo](https://twitter.com/astrodigitalgeo) 
+- [@cartoDB](https://twitter.com/cartoDB) 
+- [@SurreySat](https://twitter.com/SurreySat) 
+- [@BlackBridgeCorp](https://twitter.com/BlackBridgeCorp) 
+- [@planetlabs](https://twitter.com/planetlabs) 
+- [@DigitalGlobe](https://twitter.com/DigitalGlobe) 
+- [@AirbusDS](https://twitter.com/AirbusDS) 
+- [@eoPortal](https://twitter.com/eoPortal) 
+- [@MDA_Geospatial](https://twitter.com/MDA_Geospatial) 
+- [@SatAppsCatapult](https://twitter.com/SatAppsCatapult) 
+- [@ESA_EO](https://twitter.com/ESA_EO) 
+- [@NASA_Landsat](https://twitter.com/NASA_Landsat) 
+- [@USGSLandsat](https://twitter.com/USGSLandsat) 
+- [@RemotePixel](https://twitter.com/RemotePixel) 
+- [@DisastersChart](https://twitter.com/DisastersChart) 
+
