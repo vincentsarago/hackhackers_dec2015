@@ -40,6 +40,26 @@ Process
 - [SnapSat](http://snapsat.org) (Landsat 8 color composite)
 - [Gimp](https://www.gimp.org)
 - [ImageMagick](http://www.imagemagick.org/script/index.php)
+- [Generating map tiles with GDAL2Tiles](http://blog.thematicmapping.org/2008/03/generating-map-tiles-with-gdal2tiles.html)
+- [Dan's GDAL scripts](http://www.gina.alaska.edu/projects/gina-tools/)
+
+Example: Rio Doce after Samarco Dam Breach (Nov. 2015)
+#Download data
+landsat download LC82160732015309LGN00 -b 4,3,2
+landsat download LC82160732015325LGN00 -b 4,3,2
+#process data
+1) Create color natural composite
+gdalbuildvrt -separate ~/LC82160732015309LGN00_rgb.vrt /Users/vincentsarago/landsat/downloads/LC82160732015309LGN00/LC82160732015309LGN00_B{4,3,2}.TIF
+gdalbuildvrt -separate ~/LC82160732015325LGN00_rgb.vrt /Users/vincentsarago/landsat/downloads/LC82160732015325LGN00/LC82160732015325LGN00_B{4,3,2}.TIF
+gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/LC82160732015309LGN00_rgb.vrt ~/LC82160732015309LGN00_rgb.tif
+gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/LC82160732015325LGN00_rgb.vrt ~/LC82160732015325LGN00_rgb.tif
+2) Open geotiff in QGIS
+3) choose an area of interest
+4) Adjust color histogram
+5) Create Map Tiles 
+- gdal2tiles.py -n -z 0-13 LC82160732015309LGN00_rgbR.tif before
+- gdal2tiles.py -n -z 0-13 LC82160732015325LGN00_rgbR.tif after
+
 
 Display / Distribute
 -------
