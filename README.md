@@ -44,13 +44,13 @@ Process
 - [Dan's GDAL scripts](http://www.gina.alaska.edu/projects/gina-tools/)
 
 Example: Rio Doce after Samarco Dam Breach (Nov. 2015)
-#Download data
+!Download data
 landsat download LC82160732015309LGN00 -b 4,3,2
 landsat download LC82160732015325LGN00 -b 4,3,2
-#process data
+!process data
 1) Create color natural composite
-gdalbuildvrt -separate ~/LC82160732015309LGN00_rgb.vrt /Users/vincentsarago/landsat/downloads/LC82160732015309LGN00/LC82160732015309LGN00_B{4,3,2}.TIF
-gdalbuildvrt -separate ~/LC82160732015325LGN00_rgb.vrt /Users/vincentsarago/landsat/downloads/LC82160732015325LGN00/LC82160732015325LGN00_B{4,3,2}.TIF
+gdalbuildvrt -separate ~/LC82160732015309LGN00_rgb.vrt ~/landsat/downloads/LC82160732015309LGN00/LC82160732015309LGN00_B{4,3,2}.TIF
+gdalbuildvrt -separate ~/LC82160732015325LGN00_rgb.vrt ~/landsat/downloads/LC82160732015325LGN00/LC82160732015325LGN00_B{4,3,2}.TIF
 gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/LC82160732015309LGN00_rgb.vrt ~/LC82160732015309LGN00_rgb.tif
 gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/LC82160732015325LGN00_rgb.vrt ~/LC82160732015325LGN00_rgb.tif
 2) Open geotiff in QGIS
