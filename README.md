@@ -11,7 +11,7 @@ Imagery
 ![](/img/respercost.png)
 source: http://satsummit.github.io/landscape/#capture
 
-New players:
+New players (API based business):
 - [PlanetLabs](https://www.planet.com) (Constellation)
 - [Urthecast](https://www.urthecast.com) (Constellation + Video)
 - [SkyBox Imaging (google)](http://www.skyboximaging.com) (Constellation + Video)
