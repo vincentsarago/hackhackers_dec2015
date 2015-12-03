@@ -52,16 +52,16 @@ Display / Distribute
 
 More
 -------
-- [Satellites in Global Development](http://satsummit.github.io/landscape/) 
+- [Satellites in Global Development](http://satsummit.github.io/landscape/) (SatSummit)
 - [Derek Watkins - gdal-cheat-sheet](https://github.com/dwtkns/gdal-cheat-sheet)
 - [Jacques Tardie - Remote Sensing ressource](https://github.com/jacquestardie/remote)
-- [Processing Landsat 8 Using Open-Source Tools](https://www.mapbox.com/blog/processing-landsat-8/)
-- [Putting Landsat 8’s Bands to Work](https://www.mapbox.com/blog/putting-landsat-8-bands-to-work/)
-- [Introduction to the geo command line](https://developmentseed.org/blog/2015/08/27/geo-command-line-introduction/)
-- [Optimizing Landsat-util](https://developmentseed.org/blog/2015/03/28/twice-as-fast)
+- [Processing Landsat 8 Using Open-Source Tools](https://www.mapbox.com/blog/processing-landsat-8/) (Mapbox)
+- [Putting Landsat 8’s Bands to Work](https://www.mapbox.com/blog/putting-landsat-8-bands-to-work/) (Mapbox)
+- [Introduction to the geo command line](https://developmentseed.org/blog/2015/08/27/geo-command-line-introduction/) (devSeed)
+- [Optimizing Landsat-util](https://developmentseed.org/blog/2015/03/28/twice-as-fast) (devSeed)
 - [Gdal CookBook](https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html)
-- [Landsat 8 Band Combinations (ENVI)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
-- [Landsat 8 Band Combinations (ArcGIS)](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx)
+- [Landsat 8 Band Combinations](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx) (ENVI)
+- [Landsat 8 Band Combinations](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx) (ArcGIS)
 
 
 Who to follow
