@@ -46,7 +46,8 @@ Process
 Display / Distribute
 -------
 - [Fetch Astro Digital](https://fetch.astrodigital.com) (Publish Landsat 8)
-- [Leaflet](https://fetch.astrodigital.com) (Publish Landsat 8)
+- [SnapSat](http://snapsat.org)
+- [Leaflet](https://fetch.astrodigital.com)
 - [MapBox](https://www.mapbox.com)
 
 More
