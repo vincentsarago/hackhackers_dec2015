@@ -1,0 +1,134 @@
+<html lang="en">
+<head>
+    <!-- CSS Libraries -->
+    <link href="css/leaflet.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+    <!-- Javascript Libraries -->
+    <!--Respect the order-->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/jquery.ui.touch-punch.min.js"></script>
+    <script src="js/jquery.beforeafter-map-2.00.js"></script>
+
+    <script src="js/leaflet.js"></script>
+    <script src="js/L.Map.Sync.js"></script> <!--https://github.com/turban/Leaflet.Sync-->
+    <style>
+        body{
+            position:fixed;
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #map-container{
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .map{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+        }
+        #lt-text, #rt-text{
+            color: #000;
+            min-width: 100px;
+            text-align: center;
+            padding: 5px;
+            font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+            cursor: pointer;
+            background-color: rgba(0,0,0,0.1);
+            border-radius: 3px;
+            border: 1px solid #FFF;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="map-container"> <!-- Map Container -->
+        <div id="map-before" class="map"></div> <!-- Left Map -->
+        <div id="map-after" class="map"></div> <!-- Right Map -->
+    </div>
+
+    <script>
+        function init(){
+		    mapbefore = L.map('map-before', {
+		        zoom: 1,
+		        attributionControl: false,
+		        zoomControl: false,
+		        touchZoom: false,
+		        inertia: false,
+	            center: [1,1]
+		    });
+
+	        mapafter = L.map('map-after', {
+		        zoom: 1,
+		        attributionControl: false,
+		        zoomControl: false,
+		        touchZoom: false,
+		        inertia: false,
+	            center: [1,1]
+		    });
+
+	        var osm_url = 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+	        var attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+	        L.tileLayer(osm_url).addTo(mapbefore);
+	        L.tileLayer(osm_url, {id: 'MapID', attribution: attribution}).addTo(mapafter);
+
+	        L.control.zoom({position:'topright'}).addTo(mapafter);
+	        L.control.attribution({position:'bottomright'}).addTo(mapafter);
+
+	        before_overlays = new L.layerGroup().addTo(mapbefore);
+		    after_overlays = new L.layerGroup().addTo(mapafter);
+		    $('#map-container').beforeAfter(mapbefore, mapafter);
+
+	        mapbefore.sync(mapafter);
+	        mapafter.sync(mapbefore);
+            var attribution = '&copy; <a href="http://remotepixel.ca">RemotePixel.ca</a>';
+
+            L.tileLayer('http://remotepixel.ca/blog/data/ba_RioDoc_dec2015/2015-01-30/{z}/{x}/{y}.png', {
+                minZoom: 0,
+                maxZoom: 13,
+                maxNativeZoom: 13,
+                zIndex: 0,
+                bounds: ([[-21.2862016798, -40.7486159621], [-19.1740667321, -38.541807154]]),
+                updateWhenIdle: false,
+                attribution: attribution,
+                tms: true
+            }).addTo(before_overlays);
+
+            L.tileLayer('http://remotepixel.ca/blog/data/ba_RioDoc_dec2015/2015-11-30/{z}/{x}/{y}.png', {
+                minZoom: 0,
+                maxZoom: 13,
+                maxNativeZoom: 13,
+                zIndex: 0,
+                bounds: ([[-21.2861084767, -40.7572877631], [-19.1739861038, -38.5476135246]]),
+                updateWhenIdle: false,
+                attribution: attribution,
+                tms: true
+            }).addTo(after_overlays);
+
+            mapafter.setView([-19.587701, -39.811285], 12) //set view on the area
+
+            $("#map-container [id^='lt-text']").text("2015-01-30").css('color','#FFF').css('text-transform','none');
+            $("#map-container [id^='rt-text']").text("2015-11-30").css('color','#FFF').css('text-transform','none');
+        };
+
+        $( document ).ready(function() {
+            init();
+        });
+
+    </script>
+</body>
+</html>
