@@ -1,0 +1,22 @@
+#Download, Process and Distribute Images of Rio Doce after Samarco Dam Breach
+#See it live: http://remotepixel.ca/blog/before-after-rio-doce-20151201.html
+
+#Download Landsat Images
+landsat download LC82150742015030LGN00 -b 4,3,2
+landsat download LC82150742015334LGN00 -b 4,3,2
+
+#Create RGB images with GDAL library
+gdalbuildvrt -separate ~/rgbn_before.vrt ~/path-to-landsat/LC82150742015030LGN00/LC82150742015030LGN00_B{4,3,2}.TIF
+gdalbuildvrt -separate ~/rgbn_after.vrt ~/path-to-landsat/LC82150742015334LGN00/LC82150742015334LGN00_B{4,3,2}.TIF
+
+#Transform Image to WGS84 Projection (optional)
+gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/rgbn_before.vrt ~/rgbn_before.tif
+gdalwarp -t_srs EPSG:4326 -r cubic -srcnodata 0 -dstnodata 0 ~/rgbn_after.vrt ~/rgbn_after.tif
+
+#Open in QGIS and Rescale Image
+#http://gis.stackexchange.com/questions/45095/how-to-perform-enhancement-operations-on-an-satellite-imagery-in-qgis
+#https://docs.qgis.org/2.2/en/docs/user_manual/working_with_raster/raster_properties.html
+
+#Create Map Tiles
+gdal2tiles.py -n -z 0-13 ~/rgbn_beforeR.tif ~/BEFORE
+gdal2tiles.py -n -z 0-13 ~/rgbn_afterR.tif ~/AFTER
