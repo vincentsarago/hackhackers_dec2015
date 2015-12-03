@@ -12,10 +12,10 @@ Imagery
 source: http://satsummit.github.io/landscape/#capture
 
 New players:
-- [PlanetLabs](https://www.planet.com)
-- [Urthecast](https://www.urthecast.com)
-- [SkyBox Imaging (google)](http://www.skyboximaging.com)
-- [Dauria Aerospace](http://dauria.ru)
+- [PlanetLabs](https://www.planet.com) (Constellation)
+- [Urthecast](https://www.urthecast.com) (Constellation + Video)
+- [SkyBox Imaging (google)](http://www.skyboximaging.com) (Constellation + Video)
+- [Dauria Aerospace](http://dauria.ru) (Constellation)
 
 Access
 -------
@@ -80,6 +80,8 @@ Who to follow
 - [@MDA_Geospatial](https://twitter.com/MDA_Geospatial) 
 - [@SatAppsCatapult](https://twitter.com/SatAppsCatapult) 
 - [@ESA_EO](https://twitter.com/ESA_EO) 
+- [@Anagraph](https://twitter.com/AnagraphGeo)
+- [@Esri](https://twitter.com/Esri)
 - [@NASA_Landsat](https://twitter.com/NASA_Landsat) 
 - [@USGSLandsat](https://twitter.com/USGSLandsat) 
 - [@RemotePixel](https://twitter.com/RemotePixel) 
