@@ -52,6 +52,7 @@ Display / Distribute
 
 More
 -------
+- [Leaflet: Make a web map!](http://maptimeboston.github.io/leaflet-intro/)
 - [Satellites in Global Development](http://satsummit.github.io/landscape/) (SatSummit)
 - [Derek Watkins - gdal-cheat-sheet](https://github.com/dwtkns/gdal-cheat-sheet)
 - [Jacques Tardie - Remote Sensing ressource](https://github.com/jacquestardie/remote)
