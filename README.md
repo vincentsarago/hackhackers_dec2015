@@ -62,7 +62,7 @@ More
 - [Optimizing Landsat-util](https://developmentseed.org/blog/2015/03/28/twice-as-fast) (devSeed)
 - [Gdal CookBook](https://pcjericks.github.io/py-gdalogr-cookbook/raster_layers.html)
 - [Landsat 8 Band Combinations](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx) (ENVI)
-- [Landsat 8 Band Combinations](http://www.exelisvis.com/Home/NewsUpdates/TabId/170/ArtMID/735/ArticleID/14305/The-Many-Band-Combinations-of-Landsat-8.aspx) (ArcGIS)
+- [Landsat 8 Band Combinations](http://www.esri.com/landing-pages/software/landsat/unlock-earths-secrets) (ArcGIS)
 
 
 Who to follow
